@@ -13,6 +13,13 @@ gem "jbuilder", "~> 2.7"
 
 gem "bootsnap", ">= 1.4.2", require: false
 
+gem "bcrypt" # パスワードの暗号化
+gem "rails-i18n" # 翻訳ファイルを集めたGem
+gem "kaminari"
+gem "date_validator"
+gem "valid_email2"
+gem "nokogiri" # XML/HTMLの解析・生成
+
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 end
