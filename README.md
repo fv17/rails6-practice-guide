@@ -1,24 +1,9 @@
-# README
+# Baukis2 - 顧客管理システム
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 説明
+Baukis2は企業向けの顧客管理システム(学習用)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 推奨されるシステム環境
+* Ubuntu 18.04
+* Ruby 2.6.4
+* PostgreSQL 11.2
