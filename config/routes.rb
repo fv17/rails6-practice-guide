@@ -5,8 +5,8 @@ Rails.application.routes.draw do
     namespace :staff do
       root "top#index"
       get "login" => "sessions#new", as: :login
-      post "session" => "sessions#create", as: :session
-      delete "session" => "sessions#destroy"
+      resource :session, only: [ :create, :destroy ]
+      resource :account, only: [ :show, :edit, :update ]
     end
   end
 
@@ -14,8 +14,7 @@ Rails.application.routes.draw do
     namespace :admin do
       root "top#index"
       get "login" => "sessions#new", as: :login
-      post "session" => "sessions#create", as: :session
-      delete "session" => "sessions#destroy"
+      resource :session, only: [ :create, :destroy ]
       resources :staff_members
     end
   end
