@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "ルーティング" do
+xdescribe "ルーティング" do
   example "職員トップページ" do
     config = Rails.application.config.baukis2
     url = "http://#{config[:staff][:host]}/#{config[:staff][:path]}"
